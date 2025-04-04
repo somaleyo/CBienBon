@@ -1,1 +1,36 @@
 @use './_mixins' as *
+body
+    margin: 0
+    padding: 0
+    background-color: black
+    color: white
+    .btn
+        color: white
+        border: 3px solid #CBA35C
+        border-radius: 50px
+        padding-left: 25px
+        padding-right:25px
+        padding-top:5px  
+        padding-bottom:5px  
+.bg
+        background-image: url('../assets/img/hero-bg.jpg')
+        @include bg-size
+        background-attachment: fixed
+        background-repeat: no-repeat
+        &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.5)
+nav
+        background-color: rgba(0, 0, 0, 0.5)
+        ul
+            li
+                a
+                    color: white !important
+
+        
+    
