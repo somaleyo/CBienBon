@@ -22322,6 +22322,7 @@ body {
   padding: 0;
   background-color: rgba(13, 11, 9, 0.9176470588);
   color: white;
+  overflow-x: hidden;
 }
 body h2 {
   color: #D4AA60;
@@ -22455,6 +22456,17 @@ body #reservation form .btn2 {
   padding-bottom: 8px;
   padding-left: 30px;
   padding-right: 30px;
+}
+body #gallery img {
+  width: 24%;
+}
+body #gallery .foto1 {
+  margin-right: -25px;
+  margin-left: 20px;
+}
+body #gallery .foto2 {
+  margin-right: -25px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
