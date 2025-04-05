@@ -140,8 +140,9 @@
 </section>
 </div>
 
-<section class="reservation">
+<section id="reservation">
   <div class="container">
+    <h5 class="soustitre">Reservation</h5>
     <h2>Book a Table</h2>
     <form>
       <div class="row">
@@ -150,11 +151,11 @@
         <input type="tel" placeholder="Your Phone" required>
       </div>
       <div class="row">
-        <input type="date" required>
-        <input type="time" required>
+        <input type="text"placeholder="Date" required>
+        <input type="text" placeholder="Time" required>
         <input type="number" placeholder="# of people" min="1" required>
       </div>
-      <textarea rows="4" placeholder="Message"></textarea>
+      <textarea rows="9" placeholder="Message"></textarea>
       <button class="btn2" type="submit">Book a Table</button>
     </form>
   </div>

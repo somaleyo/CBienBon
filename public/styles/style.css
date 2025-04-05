@@ -22320,7 +22320,7 @@ readers do not read off random characters that represent icons */
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgba(13, 11, 9, 0.9176470588);
   color: white;
 }
 body .bg {
@@ -22400,6 +22400,28 @@ body header .btn-holder {
 }
 body header .jaune {
   color: #CBA35C;
+}
+body #reservation {
+  padding-top: 30px;
+}
+body #reservation form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body #reservation form .row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+body #reservation form .row input {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 40px;
+  border: solid 1 px white;
+}
+body #reservation form textarea {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
