@@ -22323,6 +22323,10 @@ body {
   background-color: rgba(13, 11, 9, 0.9176470588);
   color: white;
 }
+body h2 {
+  color: #D4AA60;
+  font-size: 45px;
+}
 body .bg {
   background-image: url("../assets/img/hero-bg.jpg");
   background-size: cover;
