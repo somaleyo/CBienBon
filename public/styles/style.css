@@ -22358,6 +22358,16 @@ body .btn:hover {
   color: white !important;
   background-color: #CBA35C !important;
 }
+body .btn2 {
+  color: white;
+  background-color: #CBA35C;
+  border-radius: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+}
 body nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -22407,25 +22417,44 @@ body header .jaune {
 }
 body #reservation {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 body #reservation form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
+  padding-top: 30px;
 }
 body #reservation form .row {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 20px;
 }
 body #reservation form .row input {
   width: 30%;
   background-color: rgba(0, 0, 0, 0);
-  height: 40px;
+  height: 55px;
   border: solid 1 px white;
+  color: white;
 }
 body #reservation form textarea {
   background-color: rgba(0, 0, 0, 0);
+  margin-left: -10px;
+  width: 95%;
+  padding-right: 10px;
+  margin-top: 15px;
+}
+body #reservation form .btn2 {
+  margin-top: 5px;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+  left: 40%;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
