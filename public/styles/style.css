@@ -22419,33 +22419,36 @@ body header .jaune {
 body #reservation {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-right: -30px;
+  margin-left: 100px;
 }
-body #reservation form {
+body #reservation .container form {
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding-top: 30px;
+  margin-left: -70px;
 }
-body #reservation form .row {
+body #reservation .container form .row {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-body #reservation form .row input {
+body #reservation .container form .row input {
   width: 30%;
   background-color: rgba(0, 0, 0, 0);
   height: 55px;
   border: solid 1 px white;
   color: white;
 }
-body #reservation form textarea {
+body #reservation .container form textarea {
   background-color: rgba(0, 0, 0, 0);
   margin-left: -10px;
   width: 95%;
   padding-right: 10px;
   margin-top: 15px;
 }
-body #reservation form .btn2 {
+body #reservation .container form .btn2 {
   margin-top: 5px;
   width: 150px;
   text-align: center;
