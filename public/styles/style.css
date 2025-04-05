@@ -22361,9 +22361,6 @@ body nav .nav-link {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
-body nav .kontakt {
-  padding-right: 300px !important;
-}
 body nav ul li a {
   color: white !important;
 }
@@ -22372,6 +22369,10 @@ body nav .container-fluid {
 }
 body nav .navbar-brand {
   font-size: 30px;
+  padding-right: 150px;
+}
+body nav .nav-btn {
+  margin-left: 300px;
 }
 body header {
   height: 650px;
