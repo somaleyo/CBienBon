@@ -22463,20 +22463,33 @@ body #whyus {
   padding-top: 50px;
 }
 body #whyus .card-container {
+  padding-top: 40px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 20px;
+  padding-bottom: 15px;
 }
 body #whyus .card-container .card {
   background-color: #1A1814;
   color: white;
+  width: 320px !important;
 }
 body #whyus .card-container .card .card-body {
-  padding-right: 30px;
+  padding-right: 60px;
   padding-left: 30px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+body #whyus .card-container .card .card-body h5 {
+  color: #CBA35C;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+body #whyus .card-container .card .card-body h6 {
+  color: white !important;
+  font-size: 22px !important;
 }
 body #reservation {
   padding-top: 30px;
