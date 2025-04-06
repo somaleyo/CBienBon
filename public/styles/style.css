@@ -22561,6 +22561,15 @@ body #contact .contact-container .map {
 }
 body footer {
   display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  justify-content: space-between;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+body footer .spanF {
+  color: #CBA35C;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
