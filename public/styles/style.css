@@ -22494,7 +22494,7 @@ body #event {
 }
 body #event .carousel-indicators {
   padding-top: 100px;
-  top: 115% !important;
+  top: 100% !important;
 }
 body #event .carousel-inner {
   padding-top: 50px;
@@ -22509,10 +22509,16 @@ body #event .carousel-inner .container-carousel .carou {
   width: 550px;
   height: 350px;
 }
-body #event .carousel-inner .container-carousel .price {
+body #event .carousel-inner .container-carousel .carousel-txt {
+  width: 500px;
+}
+body #event .carousel-inner .container-carousel .carousel-txt .price {
   font-weight: bold;
   font-size: 20px;
   text-decoration: underline #CBA35C;
+}
+body #event .carousel-inner .container-carousel h3 {
+  color: #CBA35C;
 }
 body #reservation {
   padding-top: 30px;
