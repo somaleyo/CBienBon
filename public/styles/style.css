@@ -22569,18 +22569,38 @@ body #contact .contact-container {
   flex-direction: row;
   margin-left: 80px;
   margin-right: 80px;
+  padding-bottom: 70px;
 }
 body #contact .contact-container .contact-gauche {
   padding-top: 30px;
   width: 35%;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
-body #contact .contact-container .contact-gauche .logo {
+body #contact .contact-container .contact-gauche .info {
+  display: flex;
+  flex-direction: row;
+  padding-right: 100px;
+}
+body #contact .contact-container .contact-gauche .info h6 {
+  font-weight: bold;
+  font-size: 20px;
+}
+body #contact .contact-container .contact-gauche .info .lg {
+  display: flex;
+}
+body #contact .contact-container .contact-gauche .info .lg .logo {
   background-color: #CBA35C;
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  justify-content: center;
   color: white;
   border-radius: 50%;
+  margin-right: 20px;
 }
 body #contact .contact-container .contact-droit {
   width: 70%;
