@@ -92,6 +92,41 @@ body
             display: flex
         .jaune
             color: #CBA35C
+    .bg-about
+        background-image: url('../assets/img/about-bg.jpg')
+        @include bg-about
+        background-attachment: fixed
+        background-repeat: no-repeat
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(0, 0, 0, 0.5)
+            z-index: 0
+    #about
+        padding-top: 70px
+       
+        .about-cont
+            display: flex
+            gap: 30px
+            .about-left
+                padding-left: 40px
+                margin-right: 170px
+                width: 700Px
+                i
+                   color: #CBA35C
+                   border: 1px solid #CBA35C
+                   border-radius: 50%   
+                   padding: 5px
+                   font-size: 13px
+            .about-right
+                img
+                    width: 550px
+                    height: 350px
+
     #whyus
     
     #reservation
