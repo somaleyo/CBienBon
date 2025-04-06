@@ -22487,7 +22487,13 @@ body #whyus .card-container .card .card-body h6 {
   color: white !important;
   font-size: 22px !important;
 }
-body #event .carousel-inner .carousel-item .carou {
+body #event .carousel-inner .carousel-item .container-carousel {
+  display: flex;
+  gap: 35px;
+  padding-left: 50px;
+  padding-left: 50px;
+}
+body #event .carousel-inner .carousel-item .container-carousel .carou {
   width: 400px;
 }
 body #reservation {
