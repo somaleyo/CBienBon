@@ -22585,12 +22585,38 @@ body #contact .contact-container .contact-gauche .logo {
 body #contact .contact-container .contact-droit {
   width: 70%;
   padding-top: 30px;
-  display: flex;
 }
-body #contact .contact-container .contact-droit .row2 {
-  display: flex;
+body #contact .contact-container .contact-droit .btn2 {
+  width: 170px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 350px;
 }
-body #contact .contact-container .contact-droit .row2 input {
+body #contact .contact-container .contact-droit .kontakt {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 850px;
+}
+body #contact .contact-container .contact-droit .kontakt input {
+  background-color: rgba(0, 0, 0, 0.01);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+body #contact .contact-container .contact-droit .kontakt textarea {
+  background-color: rgba(0, 0, 0, 0.01);
+  color: white;
+  height: 200px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+body #contact .contact-container .contact-droit .kontakt .row2 {
+  display: flex;
+  gap: 25px;
+}
+body #contact .contact-container .contact-droit .kontakt .row2 input {
   width: 49%;
 }
 body footer {
