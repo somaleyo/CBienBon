@@ -22487,19 +22487,32 @@ body #whyus .card-container .card .card-body h6 {
   color: white !important;
   font-size: 22px !important;
 }
+body #event {
+  background-image: url("../assets/img/events-bg.jpg");
+  height: 800px;
+  padding-top: 50px;
+}
 body #event .carousel-indicators {
   padding-top: 100px;
-  position: relative;
+  top: 115% !important;
 }
-body #event .container-carousel {
+body #event .carousel-inner {
+  padding-top: 50px;
+}
+body #event .carousel-inner .container-carousel {
   display: flex;
   gap: 35px;
   padding-left: 50px;
   padding-left: 50px;
 }
-body #event .container-carousel .carou {
-  width: 500px;
+body #event .carousel-inner .container-carousel .carou {
+  width: 550px;
   height: 350px;
+}
+body #event .carousel-inner .container-carousel .price {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline #CBA35C;
 }
 body #reservation {
   padding-top: 30px;
