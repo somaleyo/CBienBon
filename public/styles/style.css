@@ -22578,9 +22578,20 @@ body footer .reso {
 }
 body footer .reso i {
   font-size: 20px;
-  background-color: #27251F;
+  background-color: rgba(39, 37, 31, 0.0117647059);
   border-radius: 50%;
   padding: 15px;
+}
+body footer .subscription-form input {
+  border-radius: 35px;
+  padding: 10px;
+  padding-right: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+body footer .btn2 {
+  padding-bottom: 11px;
+  padding-top: 10px;
+  margin-left: -45px;
 }
 
 /*# sourceMappingURL=style.css.map */
