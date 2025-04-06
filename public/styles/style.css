@@ -22487,6 +22487,9 @@ body #whyus .card-container .card .card-body h6 {
   color: white !important;
   font-size: 22px !important;
 }
+body #event .carousel-inner .carousel-item .carou {
+  width: 400px;
+}
 body #reservation {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -22555,9 +22558,40 @@ body #chef .chef-img {
 body #chef .chef-img img {
   width: 30%;
 }
-body #contact .contact-container .map {
+body #contact .map {
   width: 100%;
   margin-top: 40px;
+  margin-bottom: 30px;
+}
+body #contact .contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+body #contact .contact-container .contact-gauche {
+  padding-top: 30px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+body #contact .contact-container .contact-gauche .logo {
+  background-color: #CBA35C;
+  padding: 15px;
+  color: white;
+  border-radius: 50%;
+}
+body #contact .contact-container .contact-droit {
+  width: 70%;
+  padding-top: 30px;
+  display: flex;
+}
+body #contact .contact-container .contact-droit .row2 {
+  display: flex;
+}
+body #contact .contact-container .contact-droit .row2 input {
+  width: 49%;
 }
 body footer {
   display: flex;
