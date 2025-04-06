@@ -22324,6 +22324,12 @@ body {
   color: white;
   overflow-x: hidden;
 }
+body .soustitre {
+  padding-left: 30px;
+}
+body .soustitre2 {
+  padding-left: 30px;
+}
 body h2 {
   color: #D4AA60;
   font-size: 45px;
@@ -22548,6 +22554,13 @@ body #chef .chef-img {
 }
 body #chef .chef-img img {
   width: 30%;
+}
+body #contact .contact-container .map {
+  width: 100%;
+  margin-top: 40px;
+}
+body footer {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
