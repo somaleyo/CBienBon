@@ -22593,5 +22593,28 @@ body footer .btn2 {
   padding-top: 10px;
   margin-left: -45px;
 }
+body #copyright {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  flex-direction: row;
+}
+body #copyright .up {
+  position: absolute;
+  left: 96%;
+  background-color: black;
+  border: 2px solid #CBA35C;
+  color: #CBA35C;
+  border-radius: 50%;
+  padding-right: 13px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 13px;
+  font-size: 15px;
+}
 
 /*# sourceMappingURL=style.css.map */
