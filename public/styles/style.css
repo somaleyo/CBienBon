@@ -22676,23 +22676,35 @@ body #reservation .container form .btn2 {
   padding-left: 30px;
   padding-right: 30px;
 }
-body #gallery img {
-  width: 24%;
+body #gallery .foto1 {
+  margin-right: -25px;
+  margin-left: 20px;
+}
+body #gallery .foto1 img {
+  width: 360px;
+  height: 300px;
   overflow: hidden;
   object-fit: cover;
   transition: transform 0.4s ease;
   transform-origin: center center;
 }
-body #gallery img:hover {
+body #gallery .foto1 img:hover {
   transform: scale(1.1);
-}
-body #gallery .foto1 {
-  margin-right: -25px;
-  margin-left: 20px;
 }
 body #gallery .foto2 {
   margin-right: -25px;
   margin-left: 20px;
+}
+body #gallery .foto2 img {
+  width: 360px;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  transform-origin: center center;
+}
+body #gallery .foto2 img:hover {
+  transform: scale(1.1);
 }
 body #chef {
   padding-top: 150px;
@@ -22709,35 +22721,6 @@ body #chef .chef-img .chef-cont {
 }
 body #chef .chef-img .chef-cont img {
   width: 100% !important;
-}
-body #chef .chef-img .chef-cont .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.7);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  text-align: center;
-}
-.chef-cont:hover body #chef .chef-img .chef-cont .overlay {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-body #chef .chef-img .chef-cont .overlay .chef-cont:hover h2 {
-  transform: scale(1);
-}
-body #chef .chef-img .chef-cont .overlay .chef-cont:hover p {
-  opacity: 1;
-}
-body #chef .chef-img .chef-cont .overlay .chef-cont:hover img {
-  opacity: 0.5;
 }
 body #contact .map {
   width: 100%;

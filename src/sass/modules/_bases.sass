@@ -330,21 +330,34 @@ body
     #gallery
         
         
-        img
-            width: 24%
-            overflow: hidden
-            object-fit: cover
-            transition: transform 0.4s ease
-            transform-origin: center center
-        img:hover
-            transform: scale(1.1) 
+       
+        
+
             
         .foto1
             margin-right: -25px
             margin-left: 20px
+            img
+                width: 360px
+                height: 300px
+                overflow: hidden
+                object-fit: cover
+                transition: transform 0.4s ease
+                transform-origin: center center
+            img:hover
+                transform: scale(1.1)
         .foto2
             margin-right: -25px
             margin-left: 20px
+            img
+                width: 360px
+                height: 300px
+                overflow: hidden
+                object-fit: cover
+                transition: transform 0.4s ease
+                transform-origin: center center
+            img:hover
+                transform: scale(1.1)
     #chef
         padding-top: 150px
         .chef-img
@@ -357,69 +370,7 @@ body
                 width: 31%
                 img
                     width: 100% !important
-                // .overlay
-                //     position: absolute
-                //     top: 50%
-                //     left: 50%
-                //     transform: translate(-50%, -50%) scale(0)
-                //     width: 100%
-                //     height: 100%
-                //     background: rgba(255, 255, 255, 0.7)
-                //     display: flex
-                //     flex-direction: column
-                //     align-items: center
-                //     justify-content: center
-                //     opacity: 0
-                //     transition: transform 0.5s ease, opacity 0.5s ease
-                //     text-align: center
-                //       .chef-cont:hover .overlay 
-                //         opacity: 1
-                //         transform: translate(-50%, -50%) scale(1)
-                    
-                    
-                //     .chef-cont:hover .overlay h2 
-                //         transform: scale(1)
-                    
-                    
-                //     .chef-cont:hover .overlay p 
-                //         opacity: 1
-                
-  
-                //     .chef-cont:hover .image 
-                //         opacity: 0.5
-                    
-                .overlay
-                    position: absolute
-                    top: 50%
-                    left: 50%
-                    transform: translate(-50%, -50%) scale(0)
-                    width: 100%
-                    height: 100%
-                    background: rgba(255, 255, 255, 0.7)
-
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    justify-content: center
-                    opacity: 0
-                    transition: transform 0.5s ease, opacity 0.5s ease
-                    text-align: center
-
-                    .chef-cont:hover &
-                        opacity: 1
-                        transform: translate(-50%, -50%) scale(1)
-
-                    .chef-cont:hover h2
-                        transform: scale(1)
-
-                    .chef-cont:hover p
-                        opacity: 1
-
-                    .chef-cont:hover img
-                        opacity: 0.5
-
-
-            
+                    object
        
     #contact
         .map
