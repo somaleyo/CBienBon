@@ -22331,7 +22331,7 @@ body .soustitre2 {
   padding-left: 30px;
 }
 body h2 {
-  color: #D4AA60;
+  color: #CBA35C;
   font-size: 45px;
 }
 body .bg {
@@ -22495,6 +22495,12 @@ body #event {
 body #event .carousel-indicators {
   padding-top: 100px;
   top: 100% !important;
+}
+body #event .carousel-indicators button {
+  background-color: #CBA35C !important;
+  border-radius: 50%;
+  height: 10px;
+  width: 15px;
 }
 body #event .carousel-inner {
   padding-top: 50px;
