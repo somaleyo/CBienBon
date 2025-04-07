@@ -22486,36 +22486,45 @@ body #about .about-cont .about-left i {
   font-size: 13px;
 }
 body #about .about-cont .about-right {
+  position: relative;
   width: 550px;
   height: 350px;
+  overflow: hidden;
 }
-body #about .about-cont .about-right img {
-  width: 550px;
-  height: 350px;
-}
-body #about .about-cont .about-right img:hover {
-  transform: scale(1.1);
+body #about .about-cont .about-right .img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
   transition: 0.5s;
+  transform-origin: center;
 }
-body #about .about-cont .about-right:before,
-body #about .about-cont .about-right:after {
+body #about .about-cont .about-right .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body #about .about-cont .about-right .img-wrapper::before, body #about .about-cont .about-right .img-wrapper::after {
   content: "";
   position: absolute;
   width: 70px;
   height: 70px;
   border: 5px solid #CBA35C;
+  transition: 0.5s;
 }
-body #about .about-cont .about-right:before {
-  top: 19%;
-  left: 61%;
+body #about .about-cont .about-right .img-wrapper::before {
+  top: 5%;
+  left: 5%;
   border-right: none;
   border-bottom: none;
 }
-body #about .about-cont .about-right:after {
-  bottom: 9%;
+body #about .about-cont .about-right .img-wrapper::after {
+  bottom: 5%;
   right: 5%;
   border-left: none;
   border-top: none;
+}
+body #about .about-cont .about-right:hover .img-wrapper {
+  transform: scale(1.1);
 }
 body #whyus {
   background-color: #0D0B09;
