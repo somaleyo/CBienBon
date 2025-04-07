@@ -22591,8 +22591,40 @@ body #chef .chef-img {
   padding-top: 50px;
   padding-left: 70px;
 }
-body #chef .chef-img img {
-  width: 30%;
+body #chef .chef-img .chef-cont {
+  width: 31%;
+}
+body #chef .chef-img .chef-cont img {
+  width: 100% !important;
+}
+body #chef .chef-img .chef-cont .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  text-align: center;
+}
+.chef-cont:hover body #chef .chef-img .chef-cont .overlay {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+body #chef .chef-img .chef-cont .overlay .chef-cont:hover h2 {
+  transform: scale(1);
+}
+body #chef .chef-img .chef-cont .overlay .chef-cont:hover p {
+  opacity: 1;
+}
+body #chef .chef-img .chef-cont .overlay .chef-cont:hover .image {
+  opacity: 0.5;
 }
 body #contact .map {
   width: 100%;
@@ -22683,9 +22715,13 @@ body footer {
   padding-right: 70px;
   padding-left: 70px;
 }
-body footer .spanF {
+body footer .link .spanF {
   color: #CBA35C;
   font-size: 14px;
+}
+body footer .link p:hover {
+  color: #CBA35C;
+  cursor: pointer;
 }
 body footer .reso {
   display: flex;

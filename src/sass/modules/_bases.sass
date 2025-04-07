@@ -238,6 +238,7 @@ body
                     padding-right: 30px
     #gallery
         
+        
         img
             width: 24%
         .foto1
@@ -254,8 +255,74 @@ body
             padding-bottom: 150px
             padding-top: 50px
             padding-left: 70px
-            img 
-                width: 30%
+            .chef-cont
+                width: 31%
+                img
+                    width: 100% !important
+                // .overlay
+                //     position: absolute
+                //     top: 50%
+                //     left: 50%
+                //     transform: translate(-50%, -50%) scale(0)
+                //     width: 100%
+                //     height: 100%
+                //     background: rgba(255, 255, 255, 0.7)
+                //     display: flex
+                //     flex-direction: column
+                //     align-items: center
+                //     justify-content: center
+                //     opacity: 0
+                //     transition: transform 0.5s ease, opacity 0.5s ease
+                //     text-align: center
+                //       .chef-cont:hover .overlay 
+                //         opacity: 1
+                //         transform: translate(-50%, -50%) scale(1)
+                    
+                    
+                //     .chef-cont:hover .overlay h2 
+                //         transform: scale(1)
+                    
+                    
+                //     .chef-cont:hover .overlay p 
+                //         opacity: 1
+                
+  
+                //     .chef-cont:hover .image 
+                //         opacity: 0.5
+                    
+                .overlay
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%) scale(0)
+                    width: 100%
+                    height: 100%
+                    background: rgba(255, 255, 255, 0.7)
+
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    opacity: 0
+                    transition: transform 0.5s ease, opacity 0.5s ease
+                    text-align: center
+
+                    .chef-cont:hover &
+                        opacity: 1
+                        transform: translate(-50%, -50%) scale(1)
+
+                    .chef-cont:hover h2
+                        transform: scale(1)
+
+                    .chef-cont:hover p
+                        opacity: 1
+
+                    .chef-cont:hover .image
+                        opacity: 0.5
+
+
+            
+       
     #contact
         .map
             width:100%
@@ -336,9 +403,13 @@ body
         justify-content: space-between
         padding-right: 70px
         padding-left: 70px
-        .spanF
-            color: $jaune
-            font-size: 14px
+        .link
+            .spanF
+                color: $jaune
+                font-size: 14px
+            p:hover
+                color: $jaune
+                cursor: pointer
         .reso
             display: flex
             flex-direction: row
