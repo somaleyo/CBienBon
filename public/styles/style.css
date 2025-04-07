@@ -22320,7 +22320,7 @@ readers do not read off random characters that represent icons */
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(13, 11, 9, 0.9176470588);
+  background-color: #0D0B09;
   color: white;
   overflow-x: hidden;
 }
@@ -22733,7 +22733,7 @@ body footer .reso {
 }
 body footer .reso i {
   font-size: 20px;
-  background-color: rgba(39, 37, 31, 0.0117647059);
+  background-color: rgba(39, 37, 31, 0.8156862745);
   border-radius: 50%;
   padding: 15px;
 }
