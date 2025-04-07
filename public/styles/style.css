@@ -22734,11 +22734,11 @@ body #menu #event .soustitre2 {
   z-index: 1;
   position: relative;
 }
-body #menu .carousel-indicators {
+body #menu #event .carousel-indicators {
   padding-top: 100px;
   top: 100% !important;
 }
-body #menu .carousel-indicators button {
+body #menu #event button {
   background-color: #CBA35C !important;
   border-radius: 50%;
   height: 10px;
