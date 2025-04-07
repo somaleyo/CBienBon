@@ -22411,6 +22411,10 @@ body nav .navbar-brand {
 body nav .nav-btn {
   margin-left: 300px;
 }
+body nav .nav-btn a {
+  color: white;
+  text-decoration: none;
+}
 body header {
   height: 650px;
   display: flex;
@@ -22434,6 +22438,10 @@ body header .btn-holder {
   padding-left: 40px;
   gap: 20px;
   display: flex;
+}
+body header .btn-holder .btn a {
+  color: white;
+  text-decoration: none;
 }
 body header .jaune {
   color: #CBA35C;
