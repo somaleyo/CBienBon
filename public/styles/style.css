@@ -22517,7 +22517,10 @@ body #whyus .card-container .card .card-body h6 {
 body #whyus .card-container .card:hover {
   background-color: #CBA35C;
 }
-body #whyus .card-container .card:hover h5 {
+body #whyus .card-container .card:hover .card-body {
+  padding-top: 20px !important;
+}
+body #whyus .card-container .card:hover .card-body h5 {
   color: white;
 }
 body #event {
@@ -22621,6 +22624,10 @@ body #reservation .container form .btn2 {
 }
 body #gallery img {
   width: 24%;
+}
+body #gallery img:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
 }
 body #gallery .foto1 {
   margin-right: -25px;
