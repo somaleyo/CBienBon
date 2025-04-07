@@ -22524,6 +22524,22 @@ body #event {
   background-image: url("../assets/img/events-bg.jpg");
   height: 800px;
   padding-top: 50px;
+  background-size: cover;
+  background-position: 10% 4%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: relative;
+}
+body #event::before {
+  content: "";
+  position: absolute;
+  top: 273%;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 body #event .carousel-indicators {
   padding-top: 100px;
@@ -22533,7 +22549,7 @@ body #event .carousel-indicators button {
   background-color: #CBA35C !important;
   border-radius: 50%;
   height: 10px;
-  width: 15px;
+  width: 10px;
 }
 body #event .carousel-inner {
   padding-top: 50px;
