@@ -22537,12 +22537,20 @@ body #event {
 body #event::before {
   content: "";
   position: absolute;
-  top: 273%;
+  top: 0%;
   left: 0;
   width: 100%;
-  height: 110%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
+}
+body #event .titre {
+  z-index: 1;
+  position: relative;
+}
+body #event .soustitre2 {
+  z-index: 1;
+  position: relative;
 }
 body #event .carousel-indicators {
   padding-top: 100px;
