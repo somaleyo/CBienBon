@@ -1,4 +1,5 @@
 @use './_mixins' as *
+@use './_variables' as *
 body
     margin: 0
     padding: 0
@@ -10,7 +11,7 @@ body
     .soustitre2
         padding-left: 30px
     h2
-        color: #D4AA60
+        color: $jaune
         font-size: 45px
     .bg
         background-image: url('../assets/img/hero-bg.jpg')
@@ -29,7 +30,7 @@ body
             z-index: 0
     .btn
         color: white
-        border: 3px solid #CBA35C
+        border: 3px solid $jaune
         border-radius: 50px
         padding-left: 25px
         padding-right:25px
@@ -37,10 +38,10 @@ body
         padding-bottom:5px  
     .btn:hover
         color: white  !important
-        background-color: #CBA35C !important
+        background-color: $jaune !important
     .btn2
         color: white
-        background-color: #CBA35C
+        background-color: $jaune
         border-radius: 50px
         padding-left: 25px
         padding-right:25px
@@ -95,7 +96,7 @@ body
             gap: 20px
             display: flex
         .jaune
-            color: #CBA35C
+            color: $jaune
     .bg-about
         background-image: url('../assets/img/about-bg.jpg')
         @include bg-about
@@ -122,8 +123,8 @@ body
                 margin-right: 170px
                 width: 700Px
                 i
-                   color: #CBA35C
-                   border: 1px solid #CBA35C
+                   color: $jaune
+                   border: 1px solid $jaune
                    border-radius: 50%   
                    padding: 5px
                    font-size: 13px
@@ -153,7 +154,7 @@ body
                     padding-top: 50px
                     padding-bottom: 50px
                     h5
-                        color:  #CBA35C
+                        color:  $jaune
                         font-weight: bold
                         font-size: 25px
                         padding-bottom: 15px
@@ -185,9 +186,9 @@ body
                         .price
                             font-weight: bold
                             font-size: 20px
-                            text-decoration: underline #CBA35C
+                            text-decoration: underline $jaune
                     h3
-                        color: #CBA35C
+                        color: $jaune
     #reservation
         padding-top: 30px
         padding-bottom: 30px
@@ -277,7 +278,7 @@ body
                     .lg
                         display: flex
                         .logo
-                            background-color: #CBA35C
+                            background-color: $jaune
                             display: flex
                             align-items: center
                             height: 50px
@@ -330,7 +331,7 @@ body
         padding-right: 70px
         padding-left: 70px
         .spanF
-            color: #CBA35C
+            color: $jaune
             font-size: 14px
         .reso
             display: flex
@@ -365,8 +366,8 @@ body
             position: absolute
             left: 96%
             background-color: black
-            border: 2px solid #CBA35C
-            color: #CBA35C
+            border: 2px solid $jaune
+            color: $jaune
             border-radius: 50%
             padding-right: 13px
             padding-top: 8px
