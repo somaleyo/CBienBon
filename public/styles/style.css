@@ -22882,12 +22882,24 @@ body #chef .chef-img .chef-cont2 {
   height: 450px;
   background-image: url("../assets/img/chefs/chefs-2.jpg");
 }
+body #chef .chef-img .chef-cont2:hover {
+  background-image: linear-gradient(to top, black, transparent), url("../assets/img/chefs/chefs-2.jpg");
+}
+body #chef .chef-img .chef-cont2:hover .overlay {
+  opacity: 1;
+}
 body #chef .chef-img .chef-cont3 {
   width: 450px;
   height: 450px;
   background-image: url("../assets/img/chefs/chefs-3.jpg");
 }
-body #chef .chef-img .chef-cont3 img {
+body #chef .chef-img .chef-cont3:hover {
+  background-image: linear-gradient(to top, black, transparent), url("../assets/img/chefs/chefs-3.jpg");
+}
+body #chef .chef-img .chef-cont3:hover .overlay {
+  opacity: 1;
+}
+body #chef .chef-img .chef-cont3:hover img {
   width: 100% !important;
 }
 body #contact .map {
