@@ -22842,5 +22842,15 @@ body #copyright .up {
   padding-left: 13px;
   font-size: 15px;
 }
+body #copyright .up i {
+  color: #CBA35C;
+}
+body #copyright .up:hover {
+  color: white;
+  background-color: #CBA35C;
+}
+body #copyright .up:hover i {
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
