@@ -22619,6 +22619,30 @@ body #whyus .card-container .card:hover .card-body {
 body #whyus .card-container .card:hover .card-body h5 {
   color: white;
 }
+body #menu .container-menu {
+  display: flex;
+  flex-direction: column;
+}
+body #menu .container-menu .type-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+body #menu .container-menu .type-menu a {
+  text-decoration: none;
+  color: white;
+}
+body #menu .container-menu .liste-menu img {
+  border-radius: 50%;
+  border: 5px solid grey;
+  width: 65px;
+  height: 65px;
+}
+body #menu .container-menu .liste-menu .cont-plat {
+  display: flex;
+  gap: 10px;
+  width: 48%;
+}
 body #event {
   background-image: url("../assets/img/events-bg.jpg");
   height: 800px;
