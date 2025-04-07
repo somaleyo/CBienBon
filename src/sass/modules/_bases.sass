@@ -275,55 +275,130 @@ body
                     padding-top: 20px !important               
                     h5
                         color: white
-                       
-
     #menu
-        .container-menu
+        .section4Div2
+            color: white
             display: flex
-            flex-direction: column
-            .type-menu
+            justify-content: center
+            gap: 30px
+            padding-bottom: 5vh
+
+            a
+                text-decoration: none
+
+            .section4Div2P
+                text-decoration: none
+                color: white
+                transition: color 0.3s ease
+
+                &:hover
+                    color: $jaune
+
+        // Éléments invisibles pour le filtrage
+        #all, #starters-filter, #salads-filter, #specialty-filter
+            display: none
+
+        .section4Div3
+            flex-wrap: wrap
+            display: flex
+            color: white
+            margin-left: 3%
+            margin-right: 3%
+
+            .carte
                 display: flex
-                flex-direction: row
-                gap: 20px
-                a
-                    text-decoration: none
-                    color: white       
-            .liste-menu
-                img
+                padding-bottom: 5vh
+                transition: opacity 0.3s ease, display 0.3s ease
+
+                .section4Img
+                    width: 60px
+                    height: 60px
+                    border: 3px solid grey
                     border-radius: 50%
-                    border: 5px solid grey
-                    width: 65px
-                    height: 65px  
-                .cont-plat
-                    display: flex
-                    gap: 10px
-                    width: 48%
-                    
-    #event
-        background-image: url('../assets/img/events-bg.jpg')
-        height: 800px
-        padding-top: 50px
-        @include bg-event
-        background-attachment: fixed
-        background-repeat: no-repeat
-        z-index: 1
-        position: relative
-        &::before
-            content: ''
-            position: absolute
-            top: 0%
-            left: 0
-            width: 100%
-            height: 100%
-            background-color: rgba(0, 0, 0, 0.5)
-            z-index: 0
-        .titre
-            z-index: 1
-            position: relative
-        .soustitre2
-            z-index: 1
-            position: relative
+
+                .section4Text
+                    padding-left: 20px
+
+                .section4Prix
+                    font-weight: bold
+                    color: $jaune
+
+        .section4Div4
+            padding-bottom: 5vh
+
+    // Styles pour le filtrage
+
+    // État par défaut - tout est visible
+    #all:target ~ .section4Div3 .carte,
+    .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div3 .carte
+        opacity: 1
+        display: flex
+
+    // Filtrage pour Starters
+    #starters-filter:target ~ .section4Div3
+        .carte
+            opacity: 0
+            display: none
+
+        .carte:has(#starters)
+            opacity: 1
+            display: flex     
+        // Filtrage pour Salads
+    #salads-filter:target ~ .section4Div3
+        .carte
+            opacity: 0
+            display: none
+
+        .carte:has(#salads)
+            opacity: 1
+            display: flex
+
+    // Filtrage pour Specialty
+    #specialty-filter:target ~ .section4Div3
+        .carte
+            opacity: 0
+            display: none
+
+        .carte:has(#specialty)
+            opacity: 1
+            display: flex
+
+    // Style pour le lien actif
+    #all:target ~ .section4Div2 a[href="#all"] .section4Div2P,
+    #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P,
+    #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P,
+    #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P,
+    .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P
+        color: $jaune
+        font-weight: bold
+
     
+   
+        #event
+            background-image: url('../assets/img/events-bg.jpg')
+            height: 800px
+            padding-top: 50px
+            @include bg-event
+            background-attachment: fixed
+            background-repeat: no-repeat
+            z-index: 1
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 0%
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(0, 0, 0, 0.5)
+                z-index: 0
+            .titre
+                z-index: 1
+                position: relative
+            .soustitre2
+                z-index: 1
+                position: relative
+        
             
         .carousel-indicators
             padding-top: 100px
