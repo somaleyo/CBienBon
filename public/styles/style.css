@@ -22716,10 +22716,22 @@ body #chef .chef-img {
   padding-top: 50px;
   padding-left: 70px;
 }
-body #chef .chef-img .chef-cont {
-  width: 31%;
+body #chef .chef-img .chef-cont1 {
+  width: 450px;
+  height: 450px;
+  background-image: url("../assets/img/chefs/chefs-1.jpg");
 }
-body #chef .chef-img .chef-cont img {
+body #chef .chef-img .chef-cont2 {
+  width: 450px;
+  height: 450px;
+  background-image: url("../assets/img/chefs/chefs-2.jpg");
+}
+body #chef .chef-img .chef-cont3 {
+  width: 450px;
+  height: 450px;
+  background-image: url("../assets/img/chefs/chefs-3.jpg");
+}
+body #chef .chef-img .chef-cont3 img {
   width: 100% !important;
 }
 body #contact .map {
