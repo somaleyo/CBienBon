@@ -22705,7 +22705,7 @@ body #menu .section4DivP:not(:has(#starters-filter:target, #salads-filter:target
   color: #CBA35C;
   font-weight: bold;
 }
-body #menu #event {
+body #event {
   background-image: url("../assets/img/events-bg.jpg");
   height: 800px;
   padding-top: 50px;
@@ -22716,7 +22716,7 @@ body #menu #event {
   z-index: 1;
   position: relative;
 }
-body #menu #event::before {
+body #event::before {
   content: "";
   position: absolute;
   top: 0%;
@@ -22726,46 +22726,46 @@ body #menu #event::before {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
-body #menu #event .titre {
+body #event .titre {
   z-index: 1;
   position: relative;
 }
-body #menu #event .soustitre2 {
+body #event .soustitre2 {
   z-index: 1;
   position: relative;
 }
-body #menu .carousel-indicators {
+body #event .carousel-indicators {
   padding-top: 100px;
   top: 100% !important;
 }
-body #menu .carousel-indicators button {
+body #event .carousel-indicators button {
   background-color: #CBA35C !important;
   border-radius: 50%;
   height: 10px;
   width: 10px;
 }
-body #menu .carousel-inner {
+body #event .carousel-inner {
   padding-top: 50px;
 }
-body #menu .carousel-inner .container-carousel {
+body #event .carousel-inner .container-carousel {
   display: flex;
   gap: 35px;
   padding-left: 50px;
   padding-left: 50px;
 }
-body #menu .carousel-inner .container-carousel .carou {
+body #event .carousel-inner .container-carousel .carou {
   width: 550px;
   height: 350px;
 }
-body #menu .carousel-inner .container-carousel .carousel-txt {
+body #event .carousel-inner .container-carousel .carousel-txt {
   width: 500px;
 }
-body #menu .carousel-inner .container-carousel .carousel-txt .price {
+body #event .carousel-inner .container-carousel .carousel-txt .price {
   font-weight: bold;
   font-size: 20px;
   text-decoration: underline #CBA35C;
 }
-body #menu .carousel-inner .container-carousel h3 {
+body #event .carousel-inner .container-carousel .carousel-txt h3 {
   color: #CBA35C;
 }
 body #reservation {
