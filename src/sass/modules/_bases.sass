@@ -12,8 +12,8 @@ body
         gap: 15px
         hr  
             flex: 1
-            border: 1px solid #fbf5f5
-            border-top: 1px solid #fbf5f5
+            border: 2px solid #fbf5f5
+            border-top: 2px solid #fbf5f5
             margin: 0
            
             width: 100px
@@ -276,7 +276,7 @@ body
                     h5
                         color: white
     #menu
-        .section4Div2
+        .liste
             color: white
             display: flex
             justify-content: center
@@ -285,8 +285,13 @@ body
 
             a
                 text-decoration: none
+                color: white
+                font-weight: 500
+                font-size: 16px
+            a:hover
+                color: $jaune
 
-            .section4Div2P
+            .menu-container
                 text-decoration: none
                 color: white
                 transition: color 0.3s ease
@@ -294,86 +299,85 @@ body
                 &:hover
                     color: $jaune
 
-        // Éléments invisibles pour le filtrage
-        #all, #starters-filter, #salads-filter, #specialty-filter
-            display: none
+        // Éléments invisibles pour le filtrage , il ne servent qu'a filtrer 
+            #all, #starters-filter, #salads-filter, #specialty-filter
+             display: none
 
-        .section4Div3
+        .menu
             flex-wrap: wrap
             display: flex
             color: white
-            margin-left: 3%
-            margin-right: 3%
+            margin-left: 100px
+            margin-right: 70px
 
             .carte
                 display: flex
                 padding-bottom: 5vh
                 transition: opacity 0.3s ease, display 0.3s ease
 
-                .section4Img
+                .Img
                     width: 60px
                     height: 60px
                     border: 3px solid grey
                     border-radius: 50%
 
-                .section4Text
+                .Text
                     padding-left: 20px
 
-                .section4Prix
+                .Prix
                     font-weight: bold
                     color: $jaune
 
-        .section4Div4
-            padding-bottom: 5vh
+     
 
-    // Styles pour le filtrage
+        // Styles pour le filtrage
 
-    // État par défaut - tout est visible
-    #all:target ~ .section4Div3 .carte,
-    .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div3 .carte
-        opacity: 1
-        display: flex
-
-    // Filtrage pour Starters
-    #starters-filter:target ~ .section4Div3
-        .carte
-            opacity: 0
-            display: none
-
-        .carte:has(#starters)
-            opacity: 1
-            display: flex     
-        // Filtrage pour Salads
-    #salads-filter:target ~ .section4Div3
-        .carte
-            opacity: 0
-            display: none
-
-        .carte:has(#salads)
+        // État par défaut - tout est visible
+        #all:target ~ .menu .carte,
+        .menu-container:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .menu .carte
             opacity: 1
             display: flex
 
-    // Filtrage pour Specialty
-    #specialty-filter:target ~ .section4Div3
-        .carte
-            opacity: 0
-            display: none
+        // Filtrage pour Starters
+        #starters-filter:target ~ .menu
+            .carte
+                opacity: 0 //cache tout les elements
+                display: none
 
-        .carte:has(#specialty)
-            opacity: 1
-            display: flex
+            .carte:has(#starters)
+                opacity: 1      //affiche les id starter
+                display: flex     
+            // Filtrage pour Salads
+        #salads-filter:target ~ .menu
+            .carte
+                opacity: 0
+                display: none
 
-    // Style pour le lien actif
-    #all:target ~ .section4Div2 a[href="#all"] .section4Div2P,
-    #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P,
-    #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P,
-    #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P,
-    .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P
-        color: $jaune
-        font-weight: bold
+            .carte:has(#salads)
+                opacity: 1
+                display: flex
 
+        // Filtrage pour Specialty
+        #specialty-filter:target ~ .menu
+            .carte
+                opacity: 0
+                display: none
+
+            .carte:has(#specialty)
+                opacity: 1
+                display: flex
+
+        // Style pour le lien actif , affiche la classe selectionné et si tu clique sur aucun des trois ca mettra automatiquement all
+        #all:target ~ .liste a[href="#all"] .section4Div2P,
+        #starters-filter:target ~ .liste a[href="#starters-filter"] .section4Div2P,
+        #salads-filter:target ~ .liste a[href="#salads-filter"] .section4Div2P,
+        #specialty-filter:target ~ .liste a[href="#specialty-filter"] .section4Div2P,
+        .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P
+            color: $jaune
+            font-weight: bold
+
+        
     
-   
         #event
             background-image: url('../assets/img/events-bg.jpg')
             height: 800px

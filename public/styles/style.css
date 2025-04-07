@@ -22331,8 +22331,8 @@ body .titre {
 }
 body .titre hr {
   flex: 1;
-  border: 1px solid #fbf5f5;
-  border-top: 1px solid #fbf5f5;
+  border: 2px solid #fbf5f5;
+  border-top: 2px solid #fbf5f5;
   margin: 0;
   width: 100px;
 }
@@ -22619,97 +22619,93 @@ body #whyus .card-container .card:hover .card-body {
 body #whyus .card-container .card:hover .card-body h5 {
   color: white;
 }
-body #menu .section4Div2 {
+body #menu .liste {
   color: white;
   display: flex;
   justify-content: center;
   gap: 30px;
   padding-bottom: 5vh;
 }
-body #menu .section4Div2 a {
+body #menu .liste a {
   text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
 }
-body #menu .section4Div2 .section4Div2P {
+body #menu .liste a:hover {
+  color: #CBA35C;
+}
+body #menu .liste .menu-container {
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
 }
-body #menu .section4Div2 .section4Div2P:hover {
+body #menu .liste .menu-container:hover {
   color: #CBA35C;
 }
-body #menu #all, body #menu #starters-filter, body #menu #salads-filter, body #menu #specialty-filter {
-  display: none;
-}
-body #menu .section4Div3 {
+body #menu .menu {
   flex-wrap: wrap;
   display: flex;
   color: white;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 100px;
+  margin-right: 70px;
 }
-body #menu .section4Div3 .carte {
+body #menu .menu .carte {
   display: flex;
   padding-bottom: 5vh;
   transition: opacity 0.3s ease, display 0.3s ease;
 }
-body #menu .section4Div3 .carte .section4Img {
+body #menu .menu .carte .Img {
   width: 60px;
   height: 60px;
   border: 3px solid grey;
   border-radius: 50%;
 }
-body #menu .section4Div3 .carte .section4Text {
+body #menu .menu .carte .Text {
   padding-left: 20px;
 }
-body #menu .section4Div3 .carte .section4Prix {
+body #menu .menu .carte .Prix {
   font-weight: bold;
   color: #CBA35C;
 }
-body #menu .section4Div4 {
-  padding-bottom: 5vh;
-}
-body #all:target ~ .section4Div3 .carte,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div3 .carte {
+body #menu #all:target ~ .menu .carte,
+body #menu .menu-container:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .menu .carte {
   opacity: 1;
   display: flex;
 }
-body #starters-filter:target ~ .section4Div3 .carte {
+body #menu #starters-filter:target ~ .menu .carte {
   opacity: 0;
   display: none;
 }
-body #starters-filter:target ~ .section4Div3 .carte:has(#starters) {
+body #menu #starters-filter:target ~ .menu .carte:has(#starters) {
   opacity: 1;
   display: flex;
 }
-body #salads-filter:target ~ .section4Div3 .carte {
+body #menu #salads-filter:target ~ .menu .carte {
   opacity: 0;
   display: none;
 }
-body #salads-filter:target ~ .section4Div3 .carte:has(#salads) {
+body #menu #salads-filter:target ~ .menu .carte:has(#salads) {
   opacity: 1;
   display: flex;
 }
-body #specialty-filter:target ~ .section4Div3 .carte {
+body #menu #specialty-filter:target ~ .menu .carte {
   opacity: 0;
   display: none;
 }
-body #specialty-filter:target ~ .section4Div3 .carte:has(#specialty) {
+body #menu #specialty-filter:target ~ .menu .carte:has(#specialty) {
   opacity: 1;
   display: flex;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P {
+body #menu #all:target ~ .liste a[href="#all"] .section4Div2P,
+body #menu #starters-filter:target ~ .liste a[href="#starters-filter"] .section4Div2P,
+body #menu #salads-filter:target ~ .liste a[href="#salads-filter"] .section4Div2P,
+body #menu #specialty-filter:target ~ .liste a[href="#specialty-filter"] .section4Div2P,
+body #menu .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P {
   color: #CBA35C;
   font-weight: bold;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P #event,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P #event,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P #event,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P #event,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P #event {
+body #menu #event {
   background-image: url("../assets/img/events-bg.jpg");
   height: 800px;
   padding-top: 50px;
@@ -22720,11 +22716,7 @@ body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #spe
   z-index: 1;
   position: relative;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P #event::before,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P #event::before,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P #event::before,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P #event::before,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P #event::before {
+body #menu #event::before {
   content: "";
   position: absolute;
   top: 0%;
@@ -22734,86 +22726,46 @@ body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #spe
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P #event .titre,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P #event .titre,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P #event .titre,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P #event .titre,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P #event .titre {
+body #menu #event .titre {
   z-index: 1;
   position: relative;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P #event .soustitre2,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P #event .soustitre2,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P #event .soustitre2,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P #event .soustitre2,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P #event .soustitre2 {
+body #menu #event .soustitre2 {
   z-index: 1;
   position: relative;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P .carousel-indicators,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P .carousel-indicators,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P .carousel-indicators,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P .carousel-indicators,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P .carousel-indicators {
+body #menu .carousel-indicators {
   padding-top: 100px;
   top: 100% !important;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P .carousel-indicators button,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P .carousel-indicators button,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P .carousel-indicators button,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P .carousel-indicators button,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P .carousel-indicators button {
+body #menu .carousel-indicators button {
   background-color: #CBA35C !important;
   border-radius: 50%;
   height: 10px;
   width: 10px;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P .carousel-inner,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P .carousel-inner,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P .carousel-inner,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P .carousel-inner,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P .carousel-inner {
+body #menu .carousel-inner {
   padding-top: 50px;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P .carousel-inner .container-carousel,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P .carousel-inner .container-carousel,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P .carousel-inner .container-carousel,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel {
+body #menu .carousel-inner .container-carousel {
   display: flex;
   gap: 35px;
   padding-left: 50px;
   padding-left: 50px;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel .carou,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P .carousel-inner .container-carousel .carou,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P .carousel-inner .container-carousel .carou,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P .carousel-inner .container-carousel .carou,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel .carou {
+body #menu .carousel-inner .container-carousel .carou {
   width: 550px;
   height: 350px;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel .carousel-txt,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P .carousel-inner .container-carousel .carousel-txt,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P .carousel-inner .container-carousel .carousel-txt,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P .carousel-inner .container-carousel .carousel-txt,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel .carousel-txt {
+body #menu .carousel-inner .container-carousel .carousel-txt {
   width: 500px;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel .carousel-txt .price,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P .carousel-inner .container-carousel .carousel-txt .price,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P .carousel-inner .container-carousel .carousel-txt .price,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P .carousel-inner .container-carousel .carousel-txt .price,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel .carousel-txt .price {
+body #menu .carousel-inner .container-carousel .carousel-txt .price {
   font-weight: bold;
   font-size: 20px;
   text-decoration: underline #CBA35C;
 }
-body #all:target ~ .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel h3,
-body #starters-filter:target ~ .section4Div2 a[href="#starters-filter"] .section4Div2P .carousel-inner .container-carousel h3,
-body #salads-filter:target ~ .section4Div2 a[href="#salads-filter"] .section4Div2P .carousel-inner .container-carousel h3,
-body #specialty-filter:target ~ .section4Div2 a[href="#specialty-filter"] .section4Div2P .carousel-inner .container-carousel h3,
-body .section4DivP:not(:has(#starters-filter:target, #salads-filter:target, #specialty-filter:target)) .section4Div2 a[href="#all"] .section4Div2P .carousel-inner .container-carousel h3 {
+body #menu .carousel-inner .container-carousel h3 {
   color: #CBA35C;
 }
 body #reservation {
