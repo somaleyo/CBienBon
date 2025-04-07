@@ -22375,6 +22375,9 @@ body .btn2 {
   padding-bottom: 5px;
   border: none;
 }
+body .btn2:hover {
+  opacity: 0.9;
+}
 body nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -22623,7 +22626,7 @@ body #chef .chef-img .chef-cont .overlay .chef-cont:hover h2 {
 body #chef .chef-img .chef-cont .overlay .chef-cont:hover p {
   opacity: 1;
 }
-body #chef .chef-img .chef-cont .overlay .chef-cont:hover .image {
+body #chef .chef-img .chef-cont .overlay .chef-cont:hover img {
   opacity: 0.5;
 }
 body #contact .map {
