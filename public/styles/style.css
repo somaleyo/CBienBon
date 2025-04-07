@@ -22472,7 +22472,8 @@ body header #videoPopup {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   max-width: 60vw;
   background-color: none;
-  z-index: 100;
+  z-index: 2;
+  overflow-x: hidden;
 }
 body header #videoPopup .close-button {
   position: absolute;
@@ -22487,7 +22488,7 @@ body header #videoPopup .close-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 101;
+  z-index: 2;
 }
 body header #videoPopup .close-button .fa-play {
   cursor: pointer;
