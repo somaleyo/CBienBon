@@ -22424,6 +22424,12 @@ body header {
   position: relative;
   z-index: 1;
   top: 7%;
+  padding-top: 5%;
+}
+body header .home-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 450px;
 }
 body header h3 {
   font-weight: bold;
@@ -22442,6 +22448,49 @@ body header .btn-holder {
 body header .btn-holder .btn a {
   color: white;
   text-decoration: none;
+}
+body header .play {
+  padding-top: 50px;
+}
+body header .fa-solid {
+  margin-top: 10%;
+  color: white;
+  position: relative;
+  background-color: rgb(204, 163, 94);
+  border-radius: 50%;
+  padding: 35px;
+  font-size: 30px;
+  box-shadow: 0px 0px 0px 10px rgba(204, 164, 94, 0.336);
+}
+body header #video-toggle {
+  display: none;
+}
+body header #videoPopup {
+  padding: 0;
+  border: solid 3px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  max-width: 60vw;
+  background-color: none;
+  z-index: 100;
+}
+body header #videoPopup .close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+}
+body header #videoPopup .close-button .fa-play {
+  cursor: pointer;
 }
 body header .jaune {
   color: #CBA35C;
@@ -22716,10 +22765,30 @@ body #chef .chef-img {
   padding-top: 50px;
   padding-left: 70px;
 }
+body #chef .chef-img .overlay {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 345px;
+  opacity: 0;
+}
+body #chef .chef-img .overlay p {
+  margin-bottom: 0;
+}
+body #chef .chef-img .overlay h3 {
+  margin-bottom: 3px;
+}
 body #chef .chef-img .chef-cont1 {
   width: 450px;
   height: 450px;
   background-image: url("../assets/img/chefs/chefs-1.jpg");
+}
+body #chef .chef-img .chef-cont1:hover {
+  background-image: linear-gradient(to top, black, transparent), url("../assets/img/chefs/chefs-1.jpg");
+}
+body #chef .chef-img .chef-cont1:hover .overlay {
+  opacity: 1;
 }
 body #chef .chef-img .chef-cont2 {
   width: 450px;
