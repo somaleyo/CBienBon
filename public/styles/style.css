@@ -22485,6 +22485,10 @@ body #about .about-cont .about-left i {
   padding: 5px;
   font-size: 13px;
 }
+body #about .about-cont .about-right {
+  width: 550px;
+  height: 350px;
+}
 body #about .about-cont .about-right img {
   width: 550px;
   height: 350px;
@@ -22492,6 +22496,26 @@ body #about .about-cont .about-right img {
 body #about .about-cont .about-right img:hover {
   transform: scale(1.1);
   transition: 0.5s;
+}
+body #about .about-cont .about-right:before,
+body #about .about-cont .about-right:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 5px solid #CBA35C;
+}
+body #about .about-cont .about-right:before {
+  top: 19%;
+  left: 61%;
+  border-right: none;
+  border-bottom: none;
+}
+body #about .about-cont .about-right:after {
+  bottom: 9%;
+  right: 5%;
+  border-left: none;
+  border-top: none;
 }
 body #whyus {
   background-color: #0D0B09;

@@ -153,12 +153,33 @@ body
                    padding: 5px
                    font-size: 13px
             .about-right
+                width: 550px
+                height: 350px
                 img
                     width: 550px
                     height: 350px
                 img:hover
                     transform: scale(1.1)
                     transition: 0.5s
+            .about-right:before,
+            .about-right:after
+                content: ''
+                position: absolute
+                width: 70px
+                height: 70px
+                border: 5px solid $jaune
+            .about-right:before
+                top: 19%
+                left: 61%
+                border-right: none
+                border-bottom: none 
+            .about-right:after
+                bottom: 9%
+                right: 5%
+                border-left: none
+                border-top: none
+
+
 
     #whyus
         background-color: #0D0B09
