@@ -6,6 +6,18 @@ body
     background-color: #0D0B09
     color: white
     overflow-x: hidden
+    .titre
+        display: flex 
+        align-items: center
+        gap: 15px
+        hr  
+            flex: 1
+            border: 1px solid #fbf5f5
+            border-top: 1px solid #fbf5f5
+            margin: 0
+           
+            width: 100px
+
     .soustitre
         padding-left: 30px
     .soustitre2
@@ -164,7 +176,10 @@ body
                     h6
                         color: white !important
                         font-size: 22px !important
-
+            .card:hover
+                background-color: $jaune
+                h5
+                    color: white
     #event
         background-image: url('../assets/img/events-bg.jpg')
         height: 800px
@@ -217,8 +232,8 @@ body
                 
                     input
                         width: 30%
-                        background-color: rgba(0,0 ,0,0)
                         height: 55px
+                        background: transparent
                         border: solid 1 px white
                         color: white
                 textarea
@@ -442,6 +457,8 @@ body
         padding-top: 30px
         padding-bottom: 20px 
         flex-direction: row
+        border-top: 1px solid rgba(60, 60, 62, 0.9)
+        margin-top: 100px
         .up
             position: absolute
             left: 96%

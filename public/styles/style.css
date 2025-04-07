@@ -22324,6 +22324,18 @@ body {
   color: white;
   overflow-x: hidden;
 }
+body .titre {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body .titre hr {
+  flex: 1;
+  border: 1px solid #fbf5f5;
+  border-top: 1px solid #fbf5f5;
+  margin: 0;
+  width: 100px;
+}
 body .soustitre {
   padding-left: 30px;
 }
@@ -22490,6 +22502,12 @@ body #whyus .card-container .card .card-body h6 {
   color: white !important;
   font-size: 22px !important;
 }
+body #whyus .card-container .card:hover {
+  background-color: #CBA35C;
+}
+body #whyus .card-container .card:hover h5 {
+  color: white;
+}
 body #event {
   background-image: url("../assets/img/events-bg.jpg");
   height: 800px;
@@ -22549,8 +22567,8 @@ body #reservation .container form .row {
 }
 body #reservation .container form .row input {
   width: 30%;
-  background-color: rgba(0, 0, 0, 0);
   height: 55px;
+  background: transparent;
   border: solid 1 px white;
   color: white;
 }
@@ -22757,6 +22775,8 @@ body #copyright {
   padding-top: 30px;
   padding-bottom: 20px;
   flex-direction: row;
+  border-top: 1px solid rgba(60, 60, 62, 0.9);
+  margin-top: 100px;
 }
 body #copyright .up {
   position: absolute;
