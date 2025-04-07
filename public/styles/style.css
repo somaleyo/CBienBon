@@ -22392,6 +22392,7 @@ body .btn2:hover {
 }
 body nav {
   background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
 }
 body nav .nav-link {
   padding-left: 15px !important;
@@ -22479,6 +22480,10 @@ body #about .about-cont .about-left i {
 body #about .about-cont .about-right img {
   width: 550px;
   height: 350px;
+}
+body #about .about-cont .about-right img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 body #whyus {
   background-color: #0D0B09;
@@ -22632,10 +22637,13 @@ body #reservation .container form .btn2 {
 }
 body #gallery img {
   width: 24%;
+  overflow: hidden;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  transform-origin: center center;
 }
 body #gallery img:hover {
-  transform: scale(1.03);
-  transition: 0.5s;
+  transform: scale(1.1);
 }
 body #gallery .foto1 {
   margin-right: -25px;

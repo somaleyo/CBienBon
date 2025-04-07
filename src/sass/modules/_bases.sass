@@ -65,6 +65,7 @@ body
     
     nav
         background-color: rgba(0, 0, 0, 0.5)
+        position: sticky
         .nav-link
             padding-left: 15px !important
             padding-right: 15px !important
@@ -147,6 +148,9 @@ body
                 img
                     width: 550px
                     height: 350px
+                img:hover
+                    transform: scale(1.1)
+                    transition: 0.5s
 
     #whyus
         background-color: #0D0B09
@@ -285,9 +289,13 @@ body
         
         img
             width: 24%
+            overflow: hidden
+            object-fit: cover
+            transition: transform 0.4s ease
+            transform-origin: center center
         img:hover
-            transform: scale(1.03)
-            transition: 0.5s
+            transform: scale(1.1) 
+            
         .foto1
             margin-right: -25px
             margin-left: 20px
