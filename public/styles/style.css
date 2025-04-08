@@ -22585,11 +22585,12 @@ body #whyus .card-container {
   align-items: start;
   gap: 20px;
   padding-bottom: 15px;
+  width: 750px !important;
 }
 body #whyus .card-container .card {
   background-color: #1A1814;
   color: white;
-  width: 320px;
+  width: 700px !important;
 }
 body #whyus .card-container .card .card-body {
   padding-right: 60px;
