@@ -23169,6 +23169,24 @@ body #copyright .up:hover i {
   #event .container-carousel .carousel-txt h3 {
     font-size: 15px !important;
   }
+  #reservation h5 {
+    margin-left: -90px !important;
+  }
+  #reservation h2 {
+    margin-left: -90px !important;
+  }
+  #reservation .container form .row {
+    width: 550px !important;
+  }
+  #reservation .container form .row input {
+    width: 28% !important;
+  }
+  #reservation .container form textarea {
+    width: 93% !important;
+  }
+  #reservation .container form button {
+    margin-left: -60px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
