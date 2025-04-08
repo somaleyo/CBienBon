@@ -23169,17 +23169,24 @@ body #copyright .up:hover i {
   #event .container-carousel .carousel-txt h3 {
     font-size: 15px !important;
   }
+  #event .container-carousel .carousel-txt .price {
+    font-size: 18px;
+  }
   #reservation h5 {
     margin-left: -90px !important;
   }
   #reservation h2 {
     margin-left: -90px !important;
   }
+  #reservation .container {
+    margin-left: 15px !important;
+  }
   #reservation .container form .row {
     width: 550px !important;
+    flex-direction: column !important;
   }
   #reservation .container form .row input {
-    width: 28% !important;
+    width: 93% !important;
   }
   #reservation .container form textarea {
     width: 93% !important;
