@@ -23132,6 +23132,20 @@ body #copyright .up:hover i {
   #whyus .card-container .card .card-body {
     width: 450px !important;
   }
+  #menu .menu-container .menu {
+    flex-direction: column !important;
+    margin-left: 20px;
+    width: 550px !important;
+  }
+  #menu .menu-container .menu .carte {
+    width: 550px !important;
+  }
+  #menu .menu-container .menu .carte .Text {
+    width: 450px !important;
+  }
+  #menu .menu-container .menu .carte .Text .point {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
