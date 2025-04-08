@@ -475,36 +475,18 @@ body
                     padding-right: 30px
                   
     #gallery
-        
-        
+        .foto-container
+            margin-left: 40px
+            img
+                width: 24%
+                height: 260px
+                overflow: hidden
+                object-fit: cover
+                transition: transform 0.4s ease
+                transform-origin: center center
+            img:hover
+                transform: scale(1.1)
        
-        
-
-            
-        .foto1
-            margin-right: -25px
-            margin-left: 20px
-            img
-                width: 360px
-                height: 300px
-                overflow: hidden
-                object-fit: cover
-                transition: transform 0.4s ease
-                transform-origin: center center
-            img:hover
-                transform: scale(1.1)
-        .foto2
-            margin-right: -25px
-            margin-left: 20px
-            img
-                width: 360px
-                height: 300px
-                overflow: hidden
-                object-fit: cover
-                transition: transform 0.4s ease
-                transform-origin: center center
-            img:hover
-                transform: scale(1.1)
     #chef
         padding-top: 150px
         .chef-img
@@ -632,6 +614,7 @@ body
         justify-content: space-between
         padding-right: 70px
         padding-left: 70px
+        gap: 0
         .link
             .spanF
                 color: $jaune
@@ -801,16 +784,11 @@ body
                 button
                     margin-left: -60px
     #gallery
-        .foto1
-            display: flex !important
-            flex-direction: column !important
-            img
-                width: 500px !important
-        .foto2
-            display: flex !important
-            flex-direction: column !important
-            img
-                width: 500px !important
+       
+         img
+            width: 95% !important
+      
+        
     #chef                
         .chef-img
             display: flex !important
@@ -911,7 +889,7 @@ body
     #whyus
         width: 550px !important
         height: 1150px !important
-        padding-left: 200px !important
+        padding-left: 150px !important
         .soustitre2
             width: 700px
             padding-left: 0
@@ -925,7 +903,11 @@ body
                     width: 450px !important
     #menu
         .menu-container
-            padding-left: 200px 
+            padding-left: 150px 
+            .liste
+                margin-left: -85px
+                padding-top: 30px
+
             .menu
                 flex-direction: column !important
                 margin-left: 20px
@@ -938,7 +920,7 @@ body
                             display: none
     #event
         height: 1000px !important
-        padding-left: 200px
+        padding-left: 150px
         &::before
             height: 110%
         h2
@@ -958,6 +940,87 @@ body
                     font-size: 15px !important
                 .price
                     font-size: 18px
+    #reservation
+        padding-left: 150px
+        margin-left: 0 !important
+        .container
+            margin-left: 100px !important
+            form
+                .row
+                    gap: 10px !important
+                    input
+                        width: 25% !important
+                textarea
+                    width: 80% !important
+                .btn2
+                    margin-left: -85px !important
+    #gallery
+        padding-left: 150px !important
+        .foto-container
+           
+            padding-top: 50px !important
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            width: 800px  !important 
+            img
+                width: 33% !important
+    #chef
+        padding-left: 150px !important
+        .chef-img
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            width: 850px !important
+            padding-left: 0 !important
+            .chef-cont1
+                width: 400px !important
+            .chef-cont2
+                width: 400px !important
+            .chef-cont3
+                width: 400px !important
+    #contact
+        padding-left: 150px !important
+        .map
+            width: 100%  !important
+        .contact-container
+            display: flex !important
+            flex-direction: column !important
+            margin-left: 0px !important
+            .contact-gauche
+                width: 400px !important
+                margin-left: 10px !important
+            .contact-droit
+                width: 500px !important
+                margin-left: 10px !important
+                .btn2
+                    margin-left: 300px !important
+                .kontakt
+                    input
+                        width: 90%
+                    textarea
+                        width: 90% !important
+                    .row2
+                        width: 765px !important
+                        input
+    footer
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap 
+        gap: 0 px  !important
+        width: 1000px !important
+        .coordone
+            padding-right: 30px !important
+        .link
+            width: 340px !important
+        .new
+            padding-left: 80px !important
+
+
+                
+            
+          
+
 
 
            
