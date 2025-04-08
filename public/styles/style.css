@@ -22809,11 +22809,21 @@ body #reservation .container form .btn2 {
   padding-left: 30px;
   padding-right: 30px;
 }
+body #gallery {
+  padding-left: 100px !important;
+}
+body #gallery h5 {
+  padding-left: 100px !important;
+}
+body #gallery h2 {
+  padding-left: 100px !important;
+  font-size: 35px !important;
+}
 body #gallery .foto-container {
   margin-left: 40px;
 }
 body #gallery .foto-container img {
-  width: 24%;
+  width: 33% !important;
   height: 260px;
   overflow: hidden;
   object-fit: cover;
@@ -23398,6 +23408,8 @@ body #copyright .up:hover i {
   }
   #gallery .foto-container {
     padding-top: 50px !important;
+    margin-right: 200px !important;
+    margin-left: 0 px !important;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
