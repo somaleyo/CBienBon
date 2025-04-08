@@ -23208,6 +23208,10 @@ body #copyright .up:hover i {
   #gallery .foto2 img {
     width: 500px !important;
   }
+  #chef .chef-img {
+    display: flex !important;
+    flex-direction: column !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
