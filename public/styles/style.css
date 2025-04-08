@@ -22589,7 +22589,7 @@ body #whyus .card-container {
 body #whyus .card-container .card {
   background-color: #1A1814;
   color: white;
-  width: 320px !important;
+  width: 320px;
 }
 body #whyus .card-container .card .card-body {
   padding-right: 60px;
@@ -23095,10 +23095,10 @@ body #copyright .up:hover i {
     padding-left: 100px;
   }
   .bg-about {
-    height: 1000px !important;
+    height: 800px !important;
   }
   .bg-about::before {
-    height: 136% !important;
+    height: 120% !important;
   }
   #about {
     display: flex;
@@ -23117,6 +23117,20 @@ body #copyright .up:hover i {
   }
   #about .about-cont .about-left h3 {
     font-size: 18px;
+  }
+  #whyus {
+    width: 550px !important;
+    height: 1150px !important;
+  }
+  #whyus .card-container {
+    flex-direction: column;
+    width: 550px !important;
+  }
+  #whyus .card-container .card {
+    width: 500px !important;
+  }
+  #whyus .card-container .card .card-body {
+    width: 450px !important;
   }
 }
 
