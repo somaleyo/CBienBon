@@ -22401,12 +22401,9 @@ body nav .nav-link {
 body nav ul li a {
   color: white !important;
 }
-body nav .container-fluid {
-  gap: 170px;
-}
 body nav .navbar-brand {
   font-size: 30px;
-  padding-right: 150px;
+  padding-right: 340px;
 }
 body nav .nav-btn {
   margin-left: 300px;
@@ -23055,6 +23052,48 @@ body #copyright .up:hover {
 }
 body #copyright .up:hover i {
   color: white;
+}
+
+@media (max-width: 576px) {
+  nav .container-fluid {
+    gap: 0px;
+  }
+  nav .container-fluid .navbar-brand {
+    padding-right: 20px;
+  }
+  nav .container-fluid .nav-btn {
+    margin-left: 0px;
+  }
+  header {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    display: flex;
+  }
+  header .home-cont {
+    gap: 0 !important;
+    width: 500px;
+    margin-left: 30px;
+    flex-direction: column !important;
+    display: flex;
+  }
+  header .home-cont .htxt {
+    text-align: center;
+    align-items: center;
+  }
+  header .home-cont .htxt h3 {
+    font-size: 30px;
+  }
+  header .home-cont .htxt h4 {
+    font-size: 20px;
+  }
+  header .home-cont .play {
+    margin-left: 200px;
+  }
+  header .home-cont .btn-holder {
+    align-items: center;
+    padding-left: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
