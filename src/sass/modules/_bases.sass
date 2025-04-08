@@ -170,7 +170,7 @@ body
         @include bg-about
         background-attachment: fixed
         background-repeat: no-repeat
-         // la degrade de l image 
+        
         &::before
             content: ''
             position: absolute
@@ -724,6 +724,26 @@ body
             .btn-holder
                 align-items: center
                 padding-left: 100px
+    .bg-about
+        height: 1000px !important
+        &::before
+            height:136% !important
+    #about
+        display: flex
+        flex-direction: column !important
+        .about-cont
+            flex-direction: column-reverse !important
+            display: flex
+            .about-left
+                padding-left: 10px !important
+                width: 550px !important
+                p
+                    font-size: 13px
+                h3
+                    font-size: 18px
+
+
+
             
 
                 

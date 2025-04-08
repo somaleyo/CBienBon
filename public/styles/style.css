@@ -23094,6 +23094,30 @@ body #copyright .up:hover i {
     align-items: center;
     padding-left: 100px;
   }
+  .bg-about {
+    height: 1000px !important;
+  }
+  .bg-about::before {
+    height: 136% !important;
+  }
+  #about {
+    display: flex;
+    flex-direction: column !important;
+  }
+  #about .about-cont {
+    flex-direction: column-reverse !important;
+    display: flex;
+  }
+  #about .about-cont .about-left {
+    padding-left: 10px !important;
+    width: 550px !important;
+  }
+  #about .about-cont .about-left p {
+    font-size: 13px;
+  }
+  #about .about-cont .about-left h3 {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
