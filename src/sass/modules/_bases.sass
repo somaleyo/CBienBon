@@ -388,7 +388,7 @@ body
         background-repeat: no-repeat
         z-index: 1
         position: relative
-        // la degrade de l image 
+        
         &::before
             content: ''
             position: absolute
@@ -536,10 +536,18 @@ body
                 width: 450px
                 height: 450px
                 background-image: url('../assets/img/chefs/chefs-2.jpg')
+            .chef-cont2:hover
+                background-image: linear-gradient(to top, black,transparent), url('../assets/img/chefs/chefs-2.jpg')
+                .overlay
+                    opacity: 1 
             .chef-cont3
                 width: 450px
                 height: 450px
                 background-image: url('../assets/img/chefs/chefs-3.jpg')
+            .chef-cont3:hover
+                background-image: linear-gradient(to top, black,transparent), url('../assets/img/chefs/chefs-3.jpg')
+                .overlay
+                    opacity: 1 
                 img
                     width: 100% !important
             
