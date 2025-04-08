@@ -23194,6 +23194,20 @@ body #copyright .up:hover i {
   #reservation .container form button {
     margin-left: -60px;
   }
+  #gallery .foto1 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #gallery .foto1 img {
+    width: 500px !important;
+  }
+  #gallery .foto2 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #gallery .foto2 img {
+    width: 500px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
