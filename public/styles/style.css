@@ -23212,6 +23212,41 @@ body #copyright .up:hover i {
     display: flex !important;
     flex-direction: column !important;
   }
+  #contact .map {
+    width: 560px !important;
+  }
+  #contact .contact-container {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: 0px !important;
+  }
+  #contact .contact-container .contact-gauche {
+    width: 400px !important;
+    margin-left: 10px !important;
+  }
+  #contact .contact-container .contact-droit {
+    width: 500px !important;
+    margin-left: 10px !important;
+  }
+  #contact .contact-container .contact-droit .btn2 {
+    margin-left: 200px !important;
+  }
+  #contact .contact-container .contact-droit .kontakt {
+    width: 550px !important;
+  }
+  #contact .contact-container .contact-droit .kontakt input {
+    width: 95% !important;
+  }
+  #contact .contact-container .contact-droit .kontakt textarea {
+    width: 95% !important;
+  }
+  #contact .contact-container .contact-droit .kontakt .row2 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #contact .contact-container .contact-droit .kontakt .row2 input {
+    width: 95% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
