@@ -23146,6 +23146,29 @@ body #copyright .up:hover i {
   #menu .menu-container .menu .carte .Text .point {
     display: none;
   }
+  #event {
+    height: 1000px !important;
+  }
+  #event::before {
+    height: 110%;
+  }
+  #event .carousel-indicators {
+    top: 90% !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  #event .container-carousel {
+    flex-direction: column !important;
+  }
+  #event .container-carousel .carou {
+    width: 500px !important;
+  }
+  #event .container-carousel .carousel-txt p {
+    font-size: 13px !important;
+  }
+  #event .container-carousel .carousel-txt h3 {
+    font-size: 15px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
