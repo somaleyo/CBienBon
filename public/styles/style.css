@@ -22577,8 +22577,10 @@ body #whyus {
   background-color: #0D0B09;
   height: 600px;
   padding-top: 50px;
+  margin-bottom: 120px;
 }
 body #whyus .card-container {
+  margin-left: 350px;
   padding-top: 40px;
   display: flex;
   justify-content: center;
@@ -22590,7 +22592,7 @@ body #whyus .card-container {
 body #whyus .card-container .card {
   background-color: #1A1814;
   color: white;
-  width: 700px !important;
+  width: 700px;
 }
 body #whyus .card-container .card .card-body {
   padding-right: 60px;
@@ -22811,20 +22813,21 @@ body #reservation .container form .btn2 {
   padding-right: 30px;
 }
 body #gallery {
-  padding-left: 100px !important;
+  padding-left: 100px;
 }
 body #gallery h5 {
-  padding-left: 100px !important;
+  padding-left: 10px;
 }
 body #gallery h2 {
-  padding-left: 100px !important;
+  padding-left: 100px;
   font-size: 35px !important;
 }
 body #gallery .foto-container {
   margin-left: 40px;
+  padding-top: 50px;
 }
 body #gallery .foto-container img {
-  width: 33% !important;
+  width: 23%;
   height: 260px;
   overflow: hidden;
   object-fit: cover;
@@ -23026,27 +23029,18 @@ body #copyright {
   border-top: 1px solid rgba(60, 60, 62, 0.9);
   margin-top: 100px;
 }
-body #copyright .up {
-  position: absolute;
-  left: 96%;
-  background-color: black;
-  border: 2px solid #CBA35C;
-  color: #CBA35C;
+body #copyright .fa-arrow-up {
   border-radius: 50%;
-  padding-right: 13px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 13px;
-  font-size: 15px;
-}
-body #copyright .up i {
+  border: 2px #CBA35C solid;
+  padding: 10px;
   color: #CBA35C;
+  background-color: dark;
 }
-body #copyright .up:hover {
+body #copyright .fa-arrow-up:hover {
   color: white;
   background-color: #CBA35C;
 }
-body #copyright .up:hover i {
+body #copyright .fa-arrow-up:hover i {
   color: white;
 }
 
@@ -23115,18 +23109,20 @@ body #copyright .up:hover i {
     font-size: 18px;
   }
   #whyus {
-    width: 550px !important;
+    width: 500px !important;
     height: 1150px !important;
   }
   #whyus .card-container {
     flex-direction: column;
-    width: 550px !important;
+    width: 500px !important;
+    margin-left: 20px !important;
+    padding-left: 0px;
   }
   #whyus .card-container .card {
     width: 500px !important;
   }
   #whyus .card-container .card .card-body {
-    width: 450px !important;
+    width: 400px !important;
   }
   #menu .menu-container .menu {
     flex-direction: column !important;
@@ -23190,6 +23186,15 @@ body #copyright .up:hover i {
   #reservation .container form button {
     margin-left: -60px;
   }
+  #gallery {
+    padding-left: 20px !important;
+  }
+  #gallery h5 {
+    padding-left: 30px !important;
+  }
+  #gallery h2 {
+    padding-left: 30px !important;
+  }
   #gallery img {
     width: 95% !important;
   }
@@ -23203,7 +23208,7 @@ body #copyright .up:hover i {
   #contact .contact-container {
     display: flex !important;
     flex-direction: column !important;
-    margin-left: 0px !important;
+    margin-left: 30px !important;
   }
   #contact .contact-container .contact-gauche {
     width: 400px !important;
@@ -23300,11 +23305,11 @@ body #copyright .up:hover i {
   #about .about-cont {
     flex-direction: column-reverse !important;
     display: flex;
-    padding-left: 150px;
+    padding-left: 100px;
   }
   #about .about-cont .about-left {
     padding-left: 10px !important;
-    width: 550px !important;
+    width: 650px !important;
   }
   #about .about-cont .about-left p {
     font-size: 13px;
@@ -23312,13 +23317,16 @@ body #copyright .up:hover i {
   #about .about-cont .about-left h3 {
     font-size: 18px;
   }
-  #about .about-cont .about-left .about-right img {
-    width: 500px;
+  #about .about-cont .about-right {
+    width: 650px !important;
+  }
+  #about .about-cont .about-right img {
+    width: 650px !important;
   }
   #whyus {
     width: 550px !important;
     height: 1150px !important;
-    padding-left: 150px !important;
+    padding-left: 100px !important;
   }
   #whyus .soustitre2 {
     width: 700px;
@@ -23327,15 +23335,16 @@ body #copyright .up:hover i {
   #whyus .card-container {
     flex-direction: column;
     width: 550px !important;
+    margin-left: 0px !important;
   }
   #whyus .card-container .card {
-    width: 500px !important;
+    width: 700px !important;
   }
   #whyus .card-container .card .card-body {
     width: 450px !important;
   }
   #menu .menu-container {
-    padding-left: 150px;
+    padding-left: 100px;
   }
   #menu .menu-container .liste {
     margin-left: -85px;
@@ -23343,7 +23352,7 @@ body #copyright .up:hover i {
   }
   #menu .menu-container .menu {
     flex-direction: column !important;
-    margin-left: 20px;
+    margin-left: 100px !important;
     width: 550px !important;
   }
   #menu .menu-container .menu .carte {
@@ -23357,7 +23366,7 @@ body #copyright .up:hover i {
   }
   #event {
     height: 1000px !important;
-    padding-left: 150px;
+    padding-left: 70px;
   }
   #event::before {
     height: 110%;
@@ -23374,7 +23383,10 @@ body #copyright .up:hover i {
     flex-direction: column !important;
   }
   #event .container-carousel .carou {
-    width: 500px !important;
+    width: 700px !important;
+  }
+  #event .container-carousel .carousel-txt {
+    width: 700px !important;
   }
   #event .container-carousel .carousel-txt p {
     font-size: 13px !important;
@@ -23386,11 +23398,14 @@ body #copyright .up:hover i {
     font-size: 18px;
   }
   #reservation {
-    padding-left: 150px;
+    padding-left: 70px;
     margin-left: 0 !important;
   }
   #reservation .container {
     margin-left: 100px !important;
+  }
+  #reservation .container form {
+    margin-left: 50px !important;
   }
   #reservation .container form .row {
     gap: 10px !important;
@@ -23405,7 +23420,7 @@ body #copyright .up:hover i {
     margin-left: -85px !important;
   }
   #gallery {
-    padding-left: 150px !important;
+    padding-left: 70px !important;
   }
   #gallery .foto-container {
     padding-top: 50px !important;
@@ -23420,7 +23435,7 @@ body #copyright .up:hover i {
     width: 33% !important;
   }
   #chef {
-    padding-left: 150px !important;
+    padding-left: 70px !important;
   }
   #chef .chef-img {
     display: flex;
@@ -23439,7 +23454,7 @@ body #copyright .up:hover i {
     width: 400px !important;
   }
   #contact {
-    padding-left: 150px !important;
+    padding-left: 70px !important;
   }
   #contact .map {
     width: 100% !important;
